@@ -1,22 +1,23 @@
 package no.tornado.fxsample.login
 
-import com.example.demo.views.DemoWorkspace
-import com.example.demo.views.login.LoginScreen
+import com.example.demo.views.HomeWorkspace
+import com.example.demo.views.login.LoginView
 import com.example.demo.views.login.RegisterView
 import javafx.application.Platform
 import tornadofx.*
 
 class LoginController : Controller() {
-    val loginScreen: LoginScreen by inject()
-    val demo: DemoWorkspace by inject()
+    val loginScreen: LoginView by inject()
+    val home: HomeWorkspace by inject()
     val registerView: RegisterView by inject()
 
     fun init() {
         with (config) {
-            if (containsKey(USERNAME) && containsKey(PASSWORD))
+            if (containsKey(USERNAME) && containsKey(PASSWORD)) {
                 tryLogin(string(USERNAME), string(PASSWORD), true)
-            else
+            }else {
                 showLoginScreen("Please log in")
+            }
         }
     }
 
@@ -36,15 +37,19 @@ class LoginController : Controller() {
     }
 
     fun showWorkbench() {
-        if (FX.primaryStage.scene.root != demo.root) {
-            FX.primaryStage.scene.root = demo.root
+        if (FX.primaryStage.scene.root != home.root) {
+            FX.primaryStage.scene.root = home.root
             FX.primaryStage.sizeToScene()
             FX.primaryStage.centerOnScreen()
         }
     }
 
     fun showRegister(){
-        registerView.root.show()
+
+        //registerView.root.show()
+        FX.primaryStage.scene.root = registerView.root
+        FX.primaryStage.sizeToScene()
+        FX.primaryStage.centerOnScreen()
     }
 
     fun showForgotPassword(){
@@ -52,13 +57,14 @@ class LoginController : Controller() {
     }
 
     fun tryLogin(username: String, password: String, remember: Boolean) {
+        println("---1---")
         runAsync {
-            username == "admin" && password == "secret"
+            username == "admin" && password == "admin"
         } ui { successfulLogin ->
 
             if (successfulLogin) {
                 loginScreen.clear()
-
+                println("---2---")
                 if (remember) {
                     with (config) {
                         set(USERNAME to username)
@@ -66,9 +72,9 @@ class LoginController : Controller() {
                         save()
                     }
                 }
-
                 showWorkbench()
             } else {
+                println("---3---")
                 showLoginScreen("Login failed. Please try again.", true)
             }
         }
@@ -90,3 +96,5 @@ class LoginController : Controller() {
     }
 
 }
+
+class LoginControllerModel : ItemViewModel<LoginController>() {}

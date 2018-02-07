@@ -10,10 +10,12 @@ import tornadofx.*
 class RegisterView : View() {
     override val root = GridPane()
    // val registerController: RegisterController by inject()
-
+    var firstname: TextField by singleAssign()
+    var lastname: TextField by singleAssign()
     var username: TextField by singleAssign()
+    var email: TextField by singleAssign()
     var password: PasswordField by singleAssign()
-
+    var confirm: PasswordField by singleAssign()
 
     init {
         title = "Please log in"
@@ -22,10 +24,19 @@ class RegisterView : View() {
             addClass(loginScreen)
 
             row("Username") {
+                firstname = textfield()
+            }
+
+            row("Username") {
+                lastname = textfield()
+            }
+
+            row("Username") {
                 username = textfield()
             }
+
             row("Email") {
-                username = textfield()
+                email = textfield()
             }
 
             row("Password") {
@@ -33,7 +44,7 @@ class RegisterView : View() {
             }
 
             row("Confirm Password") {
-                password = passwordfield()
+                confirm = passwordfield()
             }
 
             row {

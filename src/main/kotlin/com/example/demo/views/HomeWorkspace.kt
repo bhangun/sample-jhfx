@@ -1,10 +1,12 @@
 package com.example.demo.views
 
+import com.example.demo.views.login.RegisterController
 import javafx.application.Platform
 import javafx.beans.property.SimpleBooleanProperty
 import javafx.scene.control.Menu
 import javafx.scene.control.MenuItem
 import javafx.scene.control.TextArea
+import org.controlsfx.control.action.ActionMap.action
 import tornadofx.*
 import java.io.IOException
 import java.io.OutputStream
@@ -12,19 +14,27 @@ import java.io.PrintStream
 import java.nio.charset.Charset
 import java.util.*
 
-/**
- * Created by miguelius on 04/09/2017.
- */
-class DemoWorkspace : Workspace("Editor") {
-    val editorController: EditorController by inject()
+
+class HomeWorkspace : Workspace("Editor") {
+    val homeController : HomeController by inject()
 
     init {
         menubar {
-            menu("File") {
+            menu("Entities") {
                 item("New").action {
-                    //workspace.dock(mainView, true)
                     log.info("Opening text file")
-                    workspace.dock(editorController.newEditor(), true)
+                    workspace.dock(homeController.newEntity(), true)
+                }
+                separator()
+                item("Close all").action {
+                    workspace.dock(EmptyView(),true)
+                }
+                separator()
+                openWindowMenuItemsAtfer()
+            }
+            menu("Administration"){
+                item("Close all").action {
+                    workspace.dock(EmptyView(),true)
                 }
                 separator()
                 item("Exit").action {
@@ -32,18 +42,16 @@ class DemoWorkspace : Workspace("Editor") {
                     Platform.exit()
                 }
             }
-            menu("Window"){
-                item("Close all").action {
-                    editorController.editorModelList.clear()
-                    workspace.dock(EmptyView(),true)
-                }
-                separator()
-                openWindowMenuItemsAtfer()
-            }
-            menu("Help") {
+            menu("Language") {
                 item("About...")
             }
-
+            menu("Account") {
+                item("About...")
+            }
+            menu("Exit").action {
+                log.info("exit ")
+                Platform.exit()
+            }
         }
 
         add(RestProgressBar::class)
@@ -51,9 +59,9 @@ class DemoWorkspace : Workspace("Editor") {
             item( "Logs") {
                 textarea {
                     addClass("consola")
-                    val ps = PrintStream(TextAreaOutputStream(this))
+                   /* val ps = PrintStream(TextAreaOutputStream(this))
                     System.setErr(ps)
-                    System.setOut(ps)
+                    System.setOut(ps)*/
                 }
 
             }
@@ -64,7 +72,7 @@ class DemoWorkspace : Workspace("Editor") {
      * this extension method allows binding the open document's fragment to menu
      */
     private fun Menu.openWindowMenuItemsAtfer() {
-        editorController.editorModelList.onChange { dvm ->
+        /*editorController.editorModelList.onChange { dvm ->
             dvm.next()
             if (dvm.wasAdded()) {
                 dvm.addedSubList.forEach { x ->
@@ -83,7 +91,13 @@ class DemoWorkspace : Workspace("Editor") {
                     items.removeAll(morituri)
                 }
             }
-        }
+        }*/
     }
 
+}
+
+
+class EmptyView : View() {
+    //val controller: EditorController by inject()
+    override val root = label("---------------")
 }
