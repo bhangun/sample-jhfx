@@ -15,9 +15,11 @@ class LoginController : Controller() {
     val home: HomeWorkspace by inject()
     val registerView: RegisterView by inject()
     val api: Rest by inject()
+    var ENDPOINT= "http://localhost:8080"
+    var BASE_URI= "/api/"
 
     fun init() {
-        api.baseURI = "http://localhost:8080/api/"
+        api.baseURI = ENDPOINT+BASE_URI
         with (config) {
             if (containsKey(TOKEN)) {
                 showWorkbench()
