@@ -1,46 +1,39 @@
-package no.tornado.fxsample.forms
+package com.example.demo.account
 
 import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon.HOME
 import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon.USER
 import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView
-import com.example.demo.shared.Styles.Companion.zip
 import org.controlsfx.control.Notifications
 import tornadofx.*
 
-class CustomerForm : View("Register Customer") {
-    val model : CustomerModel by inject()
+class UserForm : View("Register User") {
+    val model : UserModel by inject()
 
     override val root = form {
         fieldset("Personal Information", FontAwesomeIconView(USER)) {
             field("Name") {
-                textfield(model.name).required()
+                textfield(model.username).required()
             }
 
             field("Birthday") {
-                datepicker(model.birthday)
+                passwordfield(model.password)
             }
         }
 
         fieldset("Address", FontAwesomeIconView(HOME)) {
             field("Street") {
-                textfield(model.street).required()
+                textfield(model.email).required()
             }
-            field("Zip / City") {
-                textfield(model.zip) {
-                    addClass(zip)
-                    required()
-                }
-                textfield(model.city).required()
-            }
+
         }
 
         button("Save") {
             action {
                 model.commit {
-                    val customer = model.item
+                    val user = model.item
                     Notifications.create()
                             .title("Customer saved!")
-                            .text("${customer.name} was born ${customer.birthday}\nand lives in\n${customer.street}, ${customer.zip} ${customer.city}")
+                            .text("${user.username} and ${user.email}")
                             .owner(this)
                             .showInformation()
                 }

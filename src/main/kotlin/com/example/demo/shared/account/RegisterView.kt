@@ -1,7 +1,7 @@
-package com.example.demo.shared.login
+package com.example.demo.shared.account
 
 
-import com.example.demo.shared.login.Styles.Companion.loginScreen
+import com.example.demo.shared.Styles.Companion.loginScreen
 import javafx.scene.control.PasswordField
 import javafx.scene.control.TextField
 import javafx.scene.layout.GridPane

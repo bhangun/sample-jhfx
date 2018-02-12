@@ -11,7 +11,6 @@ import javafx.scene.control.TextField
 import javafx.scene.control.Hyperlink
 import javafx.scene.layout.GridPane
 import javafx.util.Duration
-import no.tornado.fxsample.login.LoginController
 import tornadofx.*
 
 class LoginView : View() {

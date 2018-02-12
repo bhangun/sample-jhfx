@@ -1,71 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="30a08958-c617-4487-b9b8-f508f7aa9e2b" name="Default" comment="koneksi login">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/helper/Services.kt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/shared/BaseController.kt" />
+    <list default="true" id="30a08958-c617-4487-b9b8-f508f7aa9e2b" name="Default" comment="rapihkkan folder">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/MainApp.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/MainApp.kt" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/views/HomeController.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/shared/home/HomeController.kt" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/views/HomeWorkspace.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/shared/home/HomeWorkspace.kt" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/views/Styles.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/shared/Styles.kt" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/views/dashboard/chartview.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/shared/dashboard/chartview.kt" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/views/entities/CustomerForm.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/shared/entities/CustomerForm.kt" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/views/entities/EntityFragment.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/shared/entities/EntityFragment.kt" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/views/login/LoginController.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/shared/login/LoginController.kt" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/views/login/LoginView.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/shared/login/LoginView.kt" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/views/login/RegisterController.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/shared/login/RegisterController.kt" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/views/login/RegisterView.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/shared/login/RegisterView.kt" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/views/login/Styles.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/shared/login/Styles.kt" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/views/login/contohView.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/shared/login/contohView.kt" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/views/quotes.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/models/Customer.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/shared/account/User.kt" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/shared/entities/CustomerForm.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/shared/account/UserForm.kt" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/shared/entities/EntityFragment.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/shared/entities/EntityFragment.kt" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/shared/login/LoginController.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/shared/login/LoginController.kt" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/shared/login/LoginView.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/shared/login/LoginView.kt" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/shared/login/RegisterController.kt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/shared/login/RegisterController.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/shared/account/RegisterController.kt" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/shared/login/RegisterView.kt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/shared/login/RegisterView.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/shared/account/RegisterView.kt" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/shared/login/Styles.kt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/shared/login/contohView.kt" afterPath="" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/MainApp.class" afterPath="$PROJECT_DIR$/target/classes/com/example/demo/MainApp.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/views/EmptyView.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/views/Styles$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/views/Styles$2.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/views/Styles$3$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/views/Styles$3.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/views/Styles$Companion.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/views/Styles.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/views/dashboard/chartview$1$1$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/views/dashboard/chartview$1$1$2$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/views/dashboard/chartview$1$1$2$2.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/views/dashboard/chartview$1$1$2.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/views/dashboard/chartview$1$1$3$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/views/dashboard/chartview$1$1$3$2.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/views/dashboard/chartview$1$1$3.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/views/dashboard/chartview$1$1$4$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/views/dashboard/chartview$1$1$4$2.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/views/dashboard/chartview$1$1$4.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/views/dashboard/chartview$1$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/views/dashboard/chartview$1$2$1$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/views/dashboard/chartview$1$2$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/views/dashboard/chartview$1$2$2$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/views/dashboard/chartview$1$2$2.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/views/dashboard/chartview$1$2$3$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/views/dashboard/chartview$1$2$3$2.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/views/dashboard/chartview$1$2$3.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/views/dashboard/chartview$1$2$4$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/views/dashboard/chartview$1$2$4$2.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/views/dashboard/chartview$1$2$4.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/views/dashboard/chartview$1$2.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/views/dashboard/chartview.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/views/login/RegisterController$$special$$inlined$inject$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/views/login/RegisterController.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/views/login/RegisterView$$special$$inlined$with$lambda$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/views/login/RegisterView$$special$$inlined$with$lambda$2.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/views/login/RegisterView$$special$$inlined$with$lambda$3.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/views/login/RegisterView$$special$$inlined$with$lambda$4.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/views/login/RegisterView.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/views/login/Styles$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/views/login/Styles$Companion.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/demo/views/login/Styles.class" afterPath="" />
       <change beforePath="$PROJECT_DIR$/target/classes/no/tornado/fxsample/forms/CustomerForm$root$1$2$2$1.class" afterPath="$PROJECT_DIR$/target/classes/no/tornado/fxsample/forms/CustomerForm$root$1$2$2$1.class" />
       <change beforePath="$PROJECT_DIR$/target/classes/no/tornado/fxsample/login/LoginController$$special$$inlined$inject$1.class" afterPath="$PROJECT_DIR$/target/classes/no/tornado/fxsample/login/LoginController$$special$$inlined$inject$1.class" />
       <change beforePath="$PROJECT_DIR$/target/classes/no/tornado/fxsample/login/LoginController$$special$$inlined$inject$2.class" afterPath="$PROJECT_DIR$/target/classes/no/tornado/fxsample/login/LoginController$$special$$inlined$inject$2.class" />
       <change beforePath="$PROJECT_DIR$/target/classes/no/tornado/fxsample/login/LoginController$$special$$inlined$inject$3.class" afterPath="$PROJECT_DIR$/target/classes/no/tornado/fxsample/login/LoginController$$special$$inlined$inject$3.class" />
       <change beforePath="$PROJECT_DIR$/target/classes/no/tornado/fxsample/login/LoginController$Companion.class" afterPath="$PROJECT_DIR$/target/classes/no/tornado/fxsample/login/LoginController$Companion.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/no/tornado/fxsample/login/LoginController$showLoginScreen$1.class" afterPath="" />
       <change beforePath="$PROJECT_DIR$/target/classes/no/tornado/fxsample/login/LoginController$tryLogin$1.class" afterPath="$PROJECT_DIR$/target/classes/no/tornado/fxsample/login/LoginController$tryLogin$1.class" />
       <change beforePath="$PROJECT_DIR$/target/classes/no/tornado/fxsample/login/LoginController$tryLogin$2.class" afterPath="$PROJECT_DIR$/target/classes/no/tornado/fxsample/login/LoginController$tryLogin$2.class" />
       <change beforePath="$PROJECT_DIR$/target/classes/no/tornado/fxsample/login/LoginController.class" afterPath="$PROJECT_DIR$/target/classes/no/tornado/fxsample/login/LoginController.class" />
@@ -80,25 +34,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="HomeWorkspace.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/shared/home/HomeWorkspace.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="27" column="17" lean-forward="false" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
-              <folding>
-                <element signature="e#38#124#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="LoginView.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/shared/login/LoginView.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="58" column="45" lean-forward="false" selection-start-line="58" selection-start-column="45" selection-end-line="58" selection-end-column="45" />
+            <state relative-caret-position="125">
+              <caret line="71" column="8" lean-forward="false" selection-start-line="71" selection-start-column="8" selection-end-line="71" selection-end-column="8" />
               <folding>
-                <element signature="e#40#485#0" expanded="true" />
+                <element signature="e#40#436#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -119,30 +61,40 @@
       <file leaf-file-name="LoginController.kt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/shared/login/LoginController.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="365">
-              <caret line="85" column="13" lean-forward="true" selection-start-line="83" selection-start-column="11" selection-end-line="85" selection-end-column="13" />
+            <state relative-caret-position="17">
+              <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding>
-                <element signature="e#35#411#0" expanded="true" />
+                <element signature="e#39#370#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Services.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/helper/Services.kt">
+      <file leaf-file-name="Styles.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/shared/Styles.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+            <state relative-caret-position="229">
+              <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainApp.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/MainApp.kt">
+      <file leaf-file-name="UserForm.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/shared/account/UserForm.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="8" column="29" lean-forward="false" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="29" />
+            <state relative-caret-position="68">
+              <caret line="4" column="33" lean-forward="true" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DocumentViewModel.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/models/DocumentViewModel.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -151,21 +103,45 @@
       <file leaf-file-name="EntityFragment.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/shared/entities/EntityFragment.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="7" column="23" lean-forward="false" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+            <state relative-caret-position="0">
+              <caret line="0" column="32" lean-forward="false" selection-start-line="0" selection-start-column="32" selection-end-line="0" selection-end-column="32" />
               <folding>
-                <element signature="e#42#262#0" expanded="true" />
+                <element signature="e#34#254#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HomeController.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/shared/home/HomeController.kt">
+      <file leaf-file-name="RegisterController.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/shared/account/RegisterController.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+            <state relative-caret-position="187">
+              <caret line="11" column="1" lean-forward="false" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="User.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/shared/account/User.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="32" lean-forward="false" selection-start-line="0" selection-start-column="32" selection-end-line="0" selection-end-column="32" />
+              <folding>
+                <element signature="e#34#96#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RegisterView.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/shared/account/RegisterView.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+              <folding>
+                <element signature="e#42#236#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -224,6 +200,12 @@
         <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/controllers/BaseController.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/views/login/LoginView.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/controllers/LoginController.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/shared/account/RegisterView.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/shared/account/Customer.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/shared/account/CustomerForm.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/shared/entities/EntityFragment.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/shared/account/User.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/shared/account/UserForm.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/com/example/demo/shared/login/LoginController.kt" />
       </list>
     </option>
@@ -313,7 +295,46 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="kotlin" type="462c0819:PsiDirectoryNode" />
               <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jhipsterFXTemplate" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jhipsterFXTemplate" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
               <item name="shared" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jhipsterFXTemplate" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jhipsterFXTemplate" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="shared" type="462c0819:PsiDirectoryNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jhipsterFXTemplate" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jhipsterFXTemplate" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="shared" type="462c0819:PsiDirectoryNode" />
+              <item name="entities" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jhipsterFXTemplate" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jhipsterFXTemplate" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="shared" type="462c0819:PsiDirectoryNode" />
+              <item name="login" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -326,18 +347,18 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\bhang_000\workopen\jhipsterFXTemplate\src\main\kotlin\com\example\demo\shared\account" />
       <recent name="C:\Users\bhang_000\workopen\jhipsterFXTemplate\src\main\kotlin\com\example\demo\shared\home" />
       <recent name="C:\Users\bhang_000\workopen\jhipsterFXTemplate\src\main\kotlin\com\example\demo\shared\login" />
       <recent name="C:\Users\bhang_000\workopen\jhipsterFXTemplate\src\main\kotlin\com\example\demo\controllers" />
       <recent name="$PROJECT_DIR$/src/main/kotlin/com/example/demo/views" />
-      <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="com.example.demo.shared.account" />
       <recent name="com.example.demo.shared.home" />
       <recent name="com.example.demo.shared" />
       <recent name="com.example.demo.controllers" />
       <recent name="com.example.demo.views" />
-      <recent name="com.example.demo.views.entities" />
     </key>
     <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
       <recent name="com.example.demo.views.login" />
@@ -578,7 +599,14 @@
       <option name="project" value="LOCAL" />
       <updated>1517998258592</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="koneksi login">
+      <created>1518475984634</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1518475984634</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TodoView">
@@ -629,7 +657,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="tambah contoh" />
     <MESSAGE value="koneksi login" />
-    <option name="LAST_COMMIT_MESSAGE" value="koneksi login" />
+    <MESSAGE value="rapihkkan folder" />
+    <option name="LAST_COMMIT_MESSAGE" value="rapihkkan folder" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -654,27 +683,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/shared/login/RegisterView.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/shared/account/RegisterView.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding>
-            <element signature="e#40#240#0" expanded="false" />
+            <element signature="e#42#236#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/shared/login/RegisterController.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/shared/account/RegisterController.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="11" column="5" lean-forward="false" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
           <folding>
-            <element signature="e#40#67#0" expanded="false" />
+            <element signature="e#42#69#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/shared/login/contohView.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/shared/account/contohView.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
@@ -687,7 +716,7 @@
         <state relative-caret-position="289">
           <caret line="28" column="31" lean-forward="true" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
           <folding>
-            <element signature="e#40#485#0" expanded="true" />
+            <element signature="e#40#436#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -717,7 +746,7 @@
         <state relative-caret-position="340">
           <caret line="31" column="27" lean-forward="false" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
           <folding>
-            <element signature="e#40#485#0" expanded="true" />
+            <element signature="e#40#436#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -730,27 +759,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/shared/login/RegisterView.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/shared/account/RegisterView.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding>
-            <element signature="e#40#240#0" expanded="false" />
+            <element signature="e#42#236#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/shared/login/RegisterController.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/shared/account/RegisterController.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
           <folding>
-            <element signature="e#40#67#0" expanded="false" />
+            <element signature="e#42#69#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/shared/login/contohView.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/shared/account/contohView.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
           <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
@@ -763,7 +792,7 @@
         <state relative-caret-position="442">
           <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
           <folding>
-            <element signature="e#35#411#0" expanded="true" />
+            <element signature="e#39#370#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -793,7 +822,7 @@
         <state relative-caret-position="105">
           <caret line="11" column="22" lean-forward="false" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
           <folding>
-            <element signature="e#35#411#0" expanded="true" />
+            <element signature="e#39#370#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -803,7 +832,7 @@
         <state relative-caret-position="150">
           <caret line="20" column="20" lean-forward="false" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
           <folding>
-            <element signature="e#40#485#0" expanded="true" />
+            <element signature="e#40#436#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -817,25 +846,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/models/Customer.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="26" column="6" lean-forward="false" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/shared/dashboard/chartview.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="361">
           <caret line="87" column="29" lean-forward="true" selection-start-line="87" selection-start-column="29" selection-end-line="87" selection-end-column="29" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/models/DocumentViewModel.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -865,14 +880,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/views/TextEditorFragment.kt" />
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/views/views.kt" />
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/views/EditorController.kt" />
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/shared/login/contohView.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="9" column="30" lean-forward="false" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_152/src.zip!/java/util/Hashtable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
@@ -881,65 +888,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/shared/login/RegisterView.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="31" column="13" lean-forward="false" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
-          <folding>
-            <element signature="e#40#240#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/shared/entities/CustomerForm.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="19" column="42" lean-forward="false" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/shared/Styles.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="20" column="9" lean-forward="false" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/shared/login/Styles.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="19" column="1" lean-forward="false" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/shared/login/RegisterController.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="1" lean-forward="false" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-          <folding>
-            <element signature="e#40#67#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/shared/home/HomeController.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/shared/entities/EntityFragment.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="7" column="23" lean-forward="false" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
-          <folding>
-            <element signature="e#42#262#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -969,16 +922,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/shared/login/LoginView.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="58" column="45" lean-forward="false" selection-start-line="58" selection-start-column="45" selection-end-line="58" selection-end-column="45" />
-          <folding>
-            <element signature="e#40#485#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/shared/BaseController.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -997,12 +940,100 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/shared/login/LoginView.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="71" column="8" lean-forward="false" selection-start-line="71" selection-start-column="8" selection-end-line="71" selection-end-column="8" />
+          <folding>
+            <element signature="e#40#436#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/shared/login/Styles.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="19" column="1" lean-forward="false" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/shared/Styles.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/shared/account/RegisterController.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="1" lean-forward="false" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/shared/account/RegisterView.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding>
+            <element signature="e#42#236#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/models/DocumentViewModel.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/shared/account/contohView.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="28" column="16" lean-forward="false" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/shared/entities/EntityFragment.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="32" lean-forward="false" selection-start-line="0" selection-start-column="32" selection-end-line="0" selection-end-column="32" />
+          <folding>
+            <element signature="e#34#254#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/shared/account/User.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="32" lean-forward="false" selection-start-line="0" selection-start-column="32" selection-end-line="0" selection-end-column="32" />
+          <folding>
+            <element signature="e#34#96#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/shared/account/UserForm.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="33" lean-forward="true" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/com/example/demo/shared/login/LoginController.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="85" column="13" lean-forward="true" selection-start-line="83" selection-start-column="11" selection-end-line="85" selection-end-column="13" />
+        <state relative-caret-position="17">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding>
-            <element signature="e#35#411#0" expanded="true" />
+            <element signature="e#39#370#0" expanded="true" />
           </folding>
         </state>
       </provider>

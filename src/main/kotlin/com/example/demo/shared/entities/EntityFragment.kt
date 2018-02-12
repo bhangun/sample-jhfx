@@ -1,4 +1,4 @@
-package com.example.demo.shared.entities
+package com.example.demo.account
 
 import javafx.beans.property.SimpleIntegerProperty
 import javafx.beans.property.SimpleObjectProperty

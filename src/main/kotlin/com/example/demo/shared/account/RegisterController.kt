@@ -1,4 +1,4 @@
-package com.example.demo.shared.login
+package com.example.demo.shared.account
 
 
 import tornadofx.Controller

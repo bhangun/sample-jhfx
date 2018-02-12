@@ -1,9 +1,8 @@
-package no.tornado.fxsample.login
+package com.example.demo.shared.login
 
 import com.example.demo.shared.BaseController
 import com.example.demo.shared.home.HomeWorkspace
-import com.example.demo.shared.login.LoginView
-import com.example.demo.shared.login.RegisterView
+import com.example.demo.shared.account.RegisterView
 import javafx.application.Platform
 import javafx.beans.property.SimpleBooleanProperty
 import javafx.beans.property.SimpleStringProperty
@@ -20,8 +19,8 @@ class LoginController : Controller() {
     fun init() {
         api.baseURI = "http://localhost:8080/api/"
         with (config) {
-            if (containsKey(USERNAME) && containsKey(PASSWORD)) {
-                tryLogin(string(USERNAME), string(PASSWORD), true)
+            if (containsKey(TOKEN)) {
+                showWorkbench()
             }else {
                 showLogin("Please log in")
             }
@@ -52,8 +51,6 @@ class LoginController : Controller() {
     }
 
     fun showRegister(){
-
-        //registerView.root.show()
         FX.primaryStage.scene.root = registerView.root
         FX.primaryStage.sizeToScene()
         FX.primaryStage.centerOnScreen()
@@ -71,18 +68,13 @@ class LoginController : Controller() {
         var token=""
         runAsync {
              token=authenticate(username,password,remember)
-        } ui { successfulLogin ->
-            if (successfulLogin!=null) {
-                loginScreen.clear()
-                if (remember) {
-                    with (config) {
-                        set(TOKEN to token)
-                        save()
-                    }
-                }
-                showWorkbench()
-            } else {
-                showLogin("Login failed. Please try again.", true)
+        } ui {
+            loginScreen.clear()
+            showWorkbench()
+        } success {
+            with (config) {
+                set(TOKEN to token)
+                save()
             }
         } fail {
             showLogin("Login failed. Please try again.", true)
@@ -91,25 +83,15 @@ class LoginController : Controller() {
 
     fun logout() {
         with (config) {
-            remove(USERNAME)
-            remove(PASSWORD)
+            remove(TOKEN)
             save()
         }
         showLogin("Log in as another user")
     }
 
     companion object {
-        val USERNAME = "username"
-        val PASSWORD = "password"
         val TOKEN = "idtoken"
     }
-}
-
-class LoginControllerModel : ItemViewModel<LoginController>() {}
-
-class JWTToken: JsonModel {
-    val idtokenProperty = SimpleStringProperty()
-    var idtoken by idtokenProperty
 }
 
 class LoginVM(username: String, password: String, rememberMe: Boolean) : JsonModel{
