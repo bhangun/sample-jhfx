@@ -1,8 +1,8 @@
 package com.example.demo
 
 
-import com.example.demo.views.Styles
-import com.example.demo.views.login.LoginView
+import com.example.demo.shared.Styles
+import com.example.demo.shared.login.LoginView
 import tornadofx.*
 
 
