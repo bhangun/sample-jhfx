@@ -7,11 +7,9 @@ import javafx.scene.control.TextField
 import javafx.scene.layout.GridPane
 import tornadofx.*
 
-class RegisterView : View() {
+class RegisterForm : View() {
     override val root = GridPane()
    // val registerController: RegisterController by inject()
-    var firstname: TextField by singleAssign()
-    var lastname: TextField by singleAssign()
     var username: TextField by singleAssign()
     var email: TextField by singleAssign()
     var password: PasswordField by singleAssign()
@@ -22,14 +20,6 @@ class RegisterView : View() {
 
         with (root) {
             addClass(loginScreen)
-
-            row("Username") {
-                firstname = textfield()
-            }
-
-            row("Username") {
-                lastname = textfield()
-            }
 
             row("Username") {
                 username = textfield()
@@ -50,10 +40,7 @@ class RegisterView : View() {
             row {
                 button("Submit") {
                     isDefaultButton = true
-
                     setOnAction {
-
-
                     }
                 }
             }
@@ -65,6 +52,4 @@ class RegisterView : View() {
         username.clear()
         password.clear()
     }
-
-
 }

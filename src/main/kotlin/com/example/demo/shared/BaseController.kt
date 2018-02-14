@@ -1,7 +1,11 @@
 package com.example.demo.shared
 
+import com.example.demo.account.User
+import com.example.demo.account.UserJson
+import com.example.demo.account.UserModel
 import javafx.beans.property.SimpleObjectProperty
 import javafx.beans.property.SimpleStringProperty
+import javafx.collections.ObservableList
 import tornadofx.*
 import java.net.InetSocketAddress
 import java.net.Proxy
@@ -13,16 +17,80 @@ import javax.json.JsonObject
 
 class BaseController : Controller() {
     val api: Rest by inject()
+    var ENDPOINT= "http://localhost:8080"
+    var BASE_URI= "/api/"
 
-    var url= "http://localhost:8080"
+    /**
+     * GET getAccount
+     */
+    var API_ACCOUNT= BASE_URI+"account"
+
+    /**
+     * POST saveAccount
+     */
+    var API_ACCOUNT_SAVE= BASE_URI+"account"
+
+    /**
+     * POST changePassword
+     */
+    var API_ACCOUNT_CHANGE_PASSWORD= BASE_URI+"account/change-password"
+
+    /**
+     * POST finishPasswordReset
+     */
+    var API_ACCOUNT_RESET_FINISH= BASE_URI+"account/reset-password/finish"
+
+    /**
+     * POST requestPasswordReset
+     */
+    var API_ACCOUNT_RESET_INIT= BASE_URI+"account/reset-password/init"
+
+    /**
+     * GET activateAccount
+     */
+    var API_ACTIVATE= BASE_URI+"activate"
+
+    /**
+     * POST registerAccount
+     */
+    var API_REGISTER = BASE_URI+"register"
+
+    /**
+     * GET getActiveProfiles
+     */
+    var API_PROFILE_INFO = BASE_URI+"profile-info"
+
+    /**
+     * POST authorize
+     * GET isAuthenticated
+     */
+    var API_USERS_AUTHENTICATE= BASE_URI+"authenticate"
+
+    /**
+     * GET getAllUsers
+     * POST createUser
+     * PUT updateUser
+     * DELETE deleteUser
+     */
+    var API_USERS=BASE_URI+"users"
+
+    /**
+     * GET getAuthorities
+     */
+    var API_USERS_AUTHORITIES= BASE_URI+"users/authorities"
+
+    /**
+     * GET getUser
+     * DELETE deleteUser
+     */
+    var API_USER= BASE_URI+"users/"//{login}
 
 
     init {
-        api.baseURI = url+"/api"
-
+        api.baseURI = ENDPOINT
 
         //Authentication Basic Auth
-        api.setBasicAuth("username", "password")
+       // api.setBasicAuth("username", "password")
 
         //Authentication using Header
         /*val requestInterceptor = { request ->
@@ -37,11 +105,9 @@ class BaseController : Controller() {
                 //....
         }*/
 
-
         //Basic operations
         //fun loadCustomers() = api.get("customers").list().toModel<Customer>()
         //fun loadCustomers(): ObservableList<Customer> = api.get("customers").list().toModel()
-
 
         //This is what happens when you call Rest.useApacheHttpClient
         //Rest.engineProvider = { api -> HttpClientEngine(api) }
@@ -53,7 +119,28 @@ class BaseController : Controller() {
         api.engine.requestInterceptor = {
             (it as HttpURLRequest).connection.readTimeout = 5000
         }
+    }
 
+
+
+
+
+    companion object {
+        val TOKEN = "idtoken"
+    }
+
+    fun setToken(token: String){
+        with(config){
+            set(TOKEN to token)
+            api.engine.requestInterceptor ={ request ->
+                request.addHeader("Authorization", "Bearer $token")
+            }
+            save()
+        }
+    }
+
+    fun getToken():String{
+        return config.getProperty(TOKEN).toString()
     }
 
     //The following example updates a customer object.
@@ -83,6 +170,3 @@ class BaseController : Controller() {
         }
     }*/
 }
-
-
-

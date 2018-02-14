@@ -38,7 +38,6 @@ class PersonView : View() {
                 column("Name", Person::nameProperty)
                 column("Birthday", Person::birthdayProperty)
                 column("Age", Person::age)
-
         }
     }
 }

@@ -52,7 +52,6 @@ class HomeWorkspace : Workspace("JHipster FX") {
         }
 
         dock(homeController.newEntity(),true)
-        dock(homeController.newEntity(),true)
         add(RestProgressBar::class)
         with(bottomDrawer) {
             item( "Logs") {

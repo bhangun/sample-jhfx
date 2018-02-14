@@ -1,16 +1,17 @@
 package com.example.demo.shared.home
 
 
-import com.example.demo.shared.entities.EntityFragment
+import com.example.demo.account.EntityFragment
+import com.example.demo.account.UserFragment
 import tornadofx.Controller
 
 class HomeController : Controller() {
+
     init{
 
     }
 
-    fun newEntity(): EntityFragment {
-        log.info("new entity")
-        return EntityFragment()
+    fun newEntity(): UserFragment {
+        return UserFragment()
     }
 }

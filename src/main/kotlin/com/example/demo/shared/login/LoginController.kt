@@ -1,8 +1,9 @@
 package com.example.demo.shared.login
 
+import com.example.demo.account.UserForm
 import com.example.demo.shared.BaseController
 import com.example.demo.shared.home.HomeWorkspace
-import com.example.demo.shared.account.RegisterView
+import com.example.demo.shared.account.RegisterForm
 import javafx.application.Platform
 import javafx.beans.property.SimpleBooleanProperty
 import javafx.beans.property.SimpleStringProperty
@@ -13,13 +14,11 @@ class LoginController : Controller() {
     val base: BaseController by inject()
     val loginScreen: LoginView by inject()
     val home: HomeWorkspace by inject()
-    val registerView: RegisterView by inject()
+    val registerView: RegisterForm by inject()
+    val userView: UserForm by inject()
     val api: Rest by inject()
-    var ENDPOINT= "http://localhost:8080"
-    var BASE_URI= "/api/"
 
     fun init() {
-        api.baseURI = ENDPOINT+BASE_URI
         with (config) {
             if (containsKey(TOKEN)) {
                 showWorkbench()
@@ -53,7 +52,8 @@ class LoginController : Controller() {
     }
 
     fun showRegister(){
-        FX.primaryStage.scene.root = registerView.root
+        //FX.primaryStage.scene.root = registerView.root
+        FX.primaryStage.scene.root = userView.root
         FX.primaryStage.sizeToScene()
         FX.primaryStage.centerOnScreen()
     }
@@ -63,7 +63,7 @@ class LoginController : Controller() {
     }
 
     fun authenticate(username: String, password: String, remember: Boolean): String{
-        return base.api.post("authenticate", LoginVM(username,password,remember).toJSON()).one().getJsonString("id_token").string
+        return base.api.post(base.API_USERS_AUTHENTICATE, LoginVM(username,password,remember).toJSON()).one().getJsonString("id_token").string
     }
 
     fun tryLogin(username: String, password: String, remember: Boolean) {
@@ -72,12 +72,14 @@ class LoginController : Controller() {
              token=authenticate(username,password,remember)
         } ui {
             loginScreen.clear()
-            showWorkbench()
         } success {
+            log.info("<<<<<"+token)
+            base.setToken(token)
             with (config) {
                 set(TOKEN to token)
                 save()
             }
+            showWorkbench()
         } fail {
             showLogin("Login failed. Please try again.", true)
         }
