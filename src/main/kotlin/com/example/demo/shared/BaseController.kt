@@ -1,19 +1,6 @@
 package com.example.demo.shared
 
-import com.example.demo.account.User
-import com.example.demo.account.UserJson
-import com.example.demo.account.UserModel
-import javafx.beans.property.SimpleObjectProperty
-import javafx.beans.property.SimpleStringProperty
-import javafx.collections.ObservableList
 import tornadofx.*
-import java.net.InetSocketAddress
-import java.net.Proxy
-import java.util.*
-import kotlin.text.Charsets.UTF_8
-import tornadofx.getValue
-import tornadofx.setValue
-import javax.json.JsonObject
 
 class BaseController : Controller() {
     val api: Rest by inject()

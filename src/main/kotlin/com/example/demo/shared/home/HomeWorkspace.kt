@@ -57,9 +57,7 @@ class HomeWorkspace : Workspace("JHipster FX") {
             item( "Logs") {
                 textarea {
                     addClass("consola")
-                   /* val ps = PrintStream(TextAreaOutputStream(this))
-                    System.setErr(ps)
-                    System.setOut(ps)*/
+
                 }
 
             }

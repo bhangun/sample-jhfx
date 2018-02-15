@@ -23,7 +23,6 @@ class LoginView : View() {
     var forgotPassword: Hyperlink by singleAssign()
     var register: Hyperlink by singleAssign()
 
-
     init {
         title = "Welcome in this Apps"
 
@@ -115,7 +114,4 @@ class LoginView : View() {
     }
 }
 
-class LoginViewModel : ItemViewModel<LoginView>() {
-    val root = bind(LoginView::root)
-}
 
