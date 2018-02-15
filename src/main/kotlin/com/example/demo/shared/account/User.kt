@@ -5,9 +5,11 @@ import javafx.collections.FXCollections
 import javafx.collections.ObservableArray
 import javafx.collections.ObservableList
 import tornadofx.*
+import tornadofx.FX.Companion.log
 import java.time.LocalDate
 import javax.json.JsonArray
 import javax.json.JsonObject
+import javax.json.JsonValue
 
 class User() {
 
@@ -63,19 +65,20 @@ class UserModel : ItemViewModel<User>(User()) {
 
 
 class Role(): JsonModel{
-    val idProperty = SimpleStringProperty()
+    /*val idProperty = SimpleStringProperty()
     var id by idProperty
 
     override fun updateModel(json: JsonObject) {
         with(json) {
-            id = string("id")
+            id = getString()
         }
-    }
+    }*/
 }
 
+/*
 class UserJson(id: String,login: String,firstName:String, lastName:String,email: String
            ,imageUrl: String,activated: String,langKey: String,createdBy: String,createdDate: String
-           ,lastModifiedBy: String,lastModifiedDate: String,authorities: String): JsonModel {
+           ,lastModifiedBy: String,lastModifiedDate: String,authorities: List<String>): JsonModel {
 
     val idProperty = SimpleStringProperty(id)
     var id by idProperty
@@ -113,31 +116,52 @@ class UserJson(id: String,login: String,firstName:String, lastName:String,email:
     val lastModifiedDateProperty = SimpleStringProperty(lastModifiedDate)
     var lastModifiedDate by lastModifiedDateProperty
 
-    val authoritiesProperty = SimpleListProperty<String>()
-   // var authorities: JsonArray //by authoritiesProperty.set(authorities)
-   var authorities = FXCollections.observableArrayList<Role>()
+    val authoritiesProperty = SimpleStringProperty()
+    var authorities by authoritiesProperty
+   //var authorities = JsonArray
+  // var authorities = FXCollections.observableArrayList<Role>()
     //override fun toString() = login
+*/
+
+class UserJson(): JsonModel{
+
+    var id : String =""
+    var login : String =""
+    var  firstName : String =""
+    var  lastName : String =""
+    var  email: String =""
+    var  imageUrl : String =""
+    var   activated : String =""
+    var   langKey : String =""
+    var  authorities : String =""
+    var  createdBy : String =""
+    var   createdDate : String =""
+    var   lastModifiedBy : String =""
+    var   lastModifiedDate : String =""
+    init{
+        log.info("masuuuuuuuuuuuuuk")
+    }
 
     override fun updateModel(json: JsonObject) {
         with(json) {
-             id = string("id")
-             login = string("login")
-             firstName = string("firstName")
-             lastName = string("lastName")
-             email= string("email")
-             imageUrl = string("imageUrl")
-             activated = string("activated")
-             langKey = string("langKey")
-            authorities.setAll(getJsonArray("authorities").toModel())
-             createdBy = string("createdBy")
-             createdDate = string("createdDate")
-             lastModifiedBy = string("lastModifiedBy")
-             lastModifiedDate = string("lastModifiedDate")
+             id= int("id").toString()
+             login = string("login").toString()
+             firstName = string("firstName").toString()
+             lastName = string("lastName").toString()
+             email= string("email").toString()
+             imageUrl = string("imageUrl").toString()
+             activated = boolean("activated").toString()
+             langKey = string("langKey").toString()
+            authorities = jsonArray("authorities").toString()
+             createdBy = string("createdBy").toString()
+             createdDate = string("createdDate").toString()
+             lastModifiedBy = string("lastModifiedBy").toString()
+             lastModifiedDate = string("lastModifiedDate").toString()
         }
     }
 
     override fun toJSON(json: JsonBuilder) {
-        with(json) {
+        /*with(json) {
             add("id",id)
             add("login",login)
             add("firstName",firstName)
@@ -151,7 +175,7 @@ class UserJson(id: String,login: String,firstName:String, lastName:String,email:
             add("createdDate",createdDate)
             add("lastModifiedBy",lastModifiedBy)
             add("lastModifiedDate",lastModifiedDate)
-        }
+        }*/
     }
 
     /*
