@@ -32,11 +32,9 @@ class LoginView : View() {
             row("Username") {
                 username = textfield()
             }
-
             row("Password") {
                 password = passwordfield()
             }
-
             row("Remember me") {
                 remember = checkbox()
                 hbox {
@@ -48,7 +46,6 @@ class LoginView : View() {
                     }
                 }
             }
-
             row {
                 button("Login") {
                     isDefaultButton = true
@@ -113,5 +110,3 @@ class LoginView : View() {
         timelineY.play()
     }
 }
-
-

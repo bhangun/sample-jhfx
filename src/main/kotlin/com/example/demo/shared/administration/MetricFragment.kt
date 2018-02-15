@@ -1,16 +1,11 @@
-package com.example.demo.shared.dashboard
+package com.example.demo.shared.administration
 
 import javafx.scene.chart.CategoryAxis
 import javafx.scene.chart.NumberAxis
-import javafx.scene.layout.GridPane
 import tornadofx.*
 
-/**
- * Created by ronsmits on 01/05/16.
- */
-class chartview : View("Charts") {
-    override val root = GridPane()
-
+class MetricFragment : Fragment("Metric View") {
+    override val root = gridpane()
     init {
         with (root) {
             row() {

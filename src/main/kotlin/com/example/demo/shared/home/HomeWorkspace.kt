@@ -8,7 +8,7 @@ import tornadofx.*
 class HomeWorkspace : Workspace("JHipster FX") {
     val homeController : HomeController by inject()
     override fun onDock() {
-        log.info("JDnfkjzsdnfkndf")
+        log.info("On dock")
     }
 
     override fun onRefresh() {
@@ -30,29 +30,39 @@ class HomeWorkspace : Workspace("JHipster FX") {
                 openWindowMenuItemsAtfer()
             }
             menu("Administration"){
-                item("Close all").action {
-                    workspace.dock(EmptyView(),true)
+                item("User Management").action {
+                    dock(homeController.userManagement(), true)
                 }
-                separator()
-                item("Exit").action {
-                    log.info("Leaving workspace")
-                    Platform.exit()
+                item("Metric").action {
+                    dock(homeController.metric(), true)
+                }
+                item("Health").action {
+                    dock(homeController.health(), true)
+                }
+                item("Configuration").action {
+                    dock(homeController.configuration(), true)
                 }
             }
             menu("Language") {
                 item("About...")
             }
             menu("Account") {
-                item("About...")
+
             }
             menu("Exit").action {
                 log.info("exit ")
                 Platform.exit()
             }
+
+            button("Exit").action {
+                log.info("Leaving workspace")
+                Platform.exit()
+            }
         }
 
-        dock(homeController.newEntity(),true)
+       dock(homeController.dashboard(),true)
         add(RestProgressBar::class)
+
         with(bottomDrawer) {
             item( "Logs") {
                 textarea {

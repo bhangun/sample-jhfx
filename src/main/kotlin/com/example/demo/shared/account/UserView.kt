@@ -34,7 +34,7 @@ class UserView : View() {
             column("Last Name", User::lastNameProperty)
             column("Email", User::emailProperty)
             column("Activated", User::activatedProperty)
-            column("Authorities", User::authoritiesProperty)
+            column("Authorities", User::authoritiesProperty).contentWidth(padding = 100.0)
         }
     }
 }
