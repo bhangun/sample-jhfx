@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30a08958-c617-4487-b9b8-f508f7aa9e2b" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/entities/EntityIndex.kt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/shared/administration/ConfigurationFragment.kt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/shared/administration/HealthFragment.kt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/shared/dashboard/DashboardFragment.kt" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/entities/EntityFragment.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/entities/person/EntityFragment.kt" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/helper/Services.kt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/shared/account/User.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/shared/account/User.kt" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/shared/account/UserView.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/shared/account/UserView.kt" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/shared/dashboard/chartview.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/shared/administration/MetricFragment.kt" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/shared/home/HomeController.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/shared/home/HomeController.kt" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/shared/home/HomeWorkspace.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/shared/home/HomeWorkspace.kt" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/shared/login/LoginView.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/demo/shared/login/LoginView.kt" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -690,7 +678,14 @@
       <option name="project" value="LOCAL" />
       <updated>1518676889464</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="view user">
+      <created>1518685979818</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1518685979818</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TodoView">
